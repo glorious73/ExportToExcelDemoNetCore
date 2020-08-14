@@ -1,0 +1,116 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* UI Table */
+.ui-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+    .ui-table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+        text-align: left;
+    }
+
+    .ui-table thead tr {
+        background-color: #f0f0f0;
+    }
+
+    .ui-table tbody tr {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: .35em;
+    }
+
+ui-table tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+.ui-table tbody tr:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+    cursor: pointer;
+}
+
+.ui-table th, .ui-table td {
+    padding: .625em;
+    text-align: center;
+}
+
+.ui-table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.wrap-table-text {
+    max-width: 6rem !important;
+    overflow: auto;
+    white-space: normal !important; /* css-3 */
+    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    word-wrap: break-word !important; /* Internet Explorer 5.5+ */
+}
+/* /UI Table */
+
+/*-- Button --*/
+.btn-excel {
+    background-color: #00b300;
+    color: #fff;
+    outline: none;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    width: 5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-excel:hover {
+    background-color: #009a00;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*-- /Button --*/

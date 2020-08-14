@@ -1,0 +1,10 @@
+.vs
+.vscode
+ExportListToExcelDemo/bin
+ExportListToExcelDemo/obj
+ExportListToExcelDemo.Service/bin
+ExportListToExcelDemo.Service/obj
+ExportListToExcelDemo.Utility/bin
+ExportListToExcelDemo.Utility/obj
+ExportListToExcelDemo.Entity/bin
+ExportListToExcelDemo.Entity/obj

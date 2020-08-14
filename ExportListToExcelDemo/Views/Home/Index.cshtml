@@ -1,0 +1,47 @@
+﻿@using ExportListToExcelDemo.Entity
+@using System.Collections.Generic  
+@model List<User>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex flex-merchant-index-bar justify-content-between align-items-center" style="margin-bottom: 1rem;">
+    <!--Excel-->
+    <a class="btn-excel text-center text-white" asp-action="ExportToExcel">
+        Excel
+    </a>
+</div>
+<table class="ui-table">
+    <thead>
+        <tr>
+            <th scope="col">
+                Id
+            </th>
+            <th scope="col">
+                First Name
+            </th>
+            <th scope="col">
+                Last Name
+            </th>
+            <th scope="col">
+                Email
+            </th>
+            <th scope="col">
+                Phone Number
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="row" data-label="Order #">@item.Id</td>
+                <td scope="row" data-label="First Name">@item.FirstName</td>
+                <td scope="row" data-label="Last Name">@item.LastName</td>
+                <td scope="row" data-label="Email" class="wrap-table-text">@item.EmailAddress</td>
+                <td scope="row" data-label="Phone Number" class="wrap-table-text">@item.PhoneNumber</td>
+            </tr>
+        }
+    </tbody>
+</table>
