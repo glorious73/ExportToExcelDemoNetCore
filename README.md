@@ -1,6 +1,6 @@
 # Export To Excel Demo
 ## Introduction
-A demo Asp.Net Core application to demonstrate exporting lists to Excel. Writte for a blog post on Dev.to
+A demo Asp.Net Core application to demonstrate exporting lists to Excel. Written for a blog post on Dev.to
 ## Project
 Technology: Asp.Net Core 2.1.
 ## User Interface
