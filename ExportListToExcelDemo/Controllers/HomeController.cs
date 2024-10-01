@@ -48,7 +48,7 @@ namespace ExportListToExcelDemo.Controllers
                 return File(
                     fileContents: stream.ToArray(),
                     contentType: contentType,
-                    fileDownloadName: "Demo Users " + DateTime.Now.ToString() + ((workbook.GetType() == typeof(XSSFWorkbook)) ? ".xlsx" : "xls"));
+                    fileDownloadName: "Demo Users " + DateTime.Now.ToString() + ((workbook.GetType() == typeof(XSSFWorkbook)) ? ".xlsx" : ".xls"));
             }
             finally
             {
